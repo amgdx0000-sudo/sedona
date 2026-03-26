@@ -5,6 +5,7 @@
     <title>HTML Academy: {{projectTitle}}</title>
   </head>
   <body>
+
     <header class="main-header">
       <!-- Шапка -->
        <a href="index.html"><img class="logo" src="#" alt="Логотип сайта"></a>
@@ -16,20 +17,91 @@
         </ul>
         </nav>
         <ul class="search-favorite">
-          <li ><a href="#"><p><span class="visually-hidden">поиск</span></p></a></li>
-          <li><a href="#"><p><span class="visually-hidden">избраное</span></p></a></li>
+          <li ><a href="#"><span class="visually-hidden">поиск</span></a></li>
+          <li><a href="#"><span class="visually-hidden">избраное</span></a></li>
           <li><a href="#"><p><b>ХОЧУ СЮДА!</b></p></a></li>
         </ul>
     </header>
+
     <main>
       <!-- Основа -->
        <img class="background" src="#" alt="welcome to the gorgeous SEDONA"/>
-       <h2 class="header-phrase">Седона — небольшой городок в Аризоне,
-заслуживающий большего!</h2>
-       <h3 class="reasons-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h3>
+
+       <div class="textblock-wide">
+       <h2 class="header-phrase">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+       <h3 class="under-header-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h3>
+       </div>
+
+       <section class="description-blocks">
+        <div class="textblock">
+          <h3 class="textblock-header">Настоящий<br> городок</h3>
+          <p class="textblock-text">Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
+        </div>
+        <div class="image-block" id="first-image-block"></div>
+        <div class="textblock">
+          <h3 class="textblock-header">Небольшая<br> площадь</h3>
+          <p class="textblock-text">Все достопримечательности<br> находятся очень близко</p>
+        </div>
+        <div class="textblock">
+          <h3 class="textblock-header">Красивая<br> дорога</h3>
+          <p class="textblock-text">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+        </div>
+        </div>
+        <div class="textblock">
+          <h3 class="textblock-header">Мало<br> туристов</h3>
+          <p class="textblock-text">Большинство едет в Гранд<br> Каньон и толпится там</p>
+        </div>
+        <div class="image-block" id="second-image-block"></div>
+        <div class="textblock">
+          <h3 class="textblock-header">Там есть<br> мост дьявола</h3>
+          <p class="textblock-text">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
+        </div>
+       </section>
+
+      <div class="textblock-wide">
+        <h2 class="header-phrase">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+        <p class="under-header-text">Опытный персонал и качественное обслуживание!</p>
+      </div>
+
+      <section class="description-blocks">
+        <div class="textblock">
+          <img class="block-icon" src="#" alt="домик"/>
+          <h3 class="textblock-header">Жильё</h3>
+          <p class="textblock-text">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+        </div>
+        <div class="textblock">
+          <img class="block-icon" src="#" alt="домик"/>
+          <h3 class="textblock-header">Еда</h3>
+          <p class="textblock-text">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+        </div>
+        <div class="textblock">
+          <img class="block-icon" src="#" alt="домик"/>
+          <h3 class="textblock-header">Сувениры</h3>
+          <p class="textblock-text">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+        </div>
+       </section>
+
+       <section>
+        <div>
+          <h2 class="header-phrase">Заинтересовались?</h2>
+          <p class="under-header-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="search-button" type="button">Поиск гостиницы в Седоне</button>
+        </div>
+       </section>
+
+       <section class="subscribe-section">
+
+       </section>
+
+       <footer class="main-footer">
+        <div>
+          <a href="#"><span class="visually-hidden">Ссылка на ВК</span></a>
+          <a href="#"><span class="visually-hidden">Ссылка на Телеграм</span></a>
+          <a href="#"><span class="visually-hidden">Ссылка на Ютуб</span></a>
+        </div>
+        <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <img src="#" class="some-logo" alt="лого"/>
+       </footer>
     </main>
-    <footer class="main-footer">
-      <!-- Подвал -->
-    </footer>
   </body>
 </html>
