@@ -3,17 +3,135 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Заголовок страницы</title>
+    <title>Гостиницы Седоны</title>
   </head>
   <body>
+
     <header class="main-header">
       <!-- Шапка -->
+      <a href="index.html"><img class="logo" src="#" alt="Логотип сайта" /></a>
+      <nav class="navigation-panel">
+        <ul class="navigation">
+          <li class="">
+            <a href="index.html"
+              ><p><b>Главная</b></p></a
+            >
+          </li>
+          <li>
+            <a href="about.html"
+              ><p><b>О Седоне</b></p></a
+            >
+          </li>
+          <li>
+            <a href="catalog.html"
+              ><p><b>Гостиницы</b></p></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul class="navigation">
+        <li class="search">
+          <a href="#"><span class="visually-hidden">поиск</span></a>
+        </li>
+        <li class="favorite">
+          <a href="#"><span class="visually-hidden">избраное</span></a>
+        </li>
+        <li class="popup">
+          <a href="#"
+            ><p><b>Хочу сюда!</b></p></a
+          >
+        </li>
+      </ul>
     </header>
+
     <main>
       <!-- Основа -->
+       <section class="filter">
+        <h1 class="visually-hidden">Список гостиниц с фильтрами</h1>
+        <form action="#" method="get">
+
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li><input type="checkbox" name="pool" checked>Бассейн</li>
+              <li><input type="checkbox" name="parking">Парковка</li>
+              <li><input type="checkbox" name="wi-fi">Wi-Fi</li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <ul>
+              <li><input type="radio" name="housing-type" checked>Гостиница</li>
+              <li><input type="radio" name="housing-type">Мотель</li>
+              <li><input type="radio" name="housing-type">Апартаменты</li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <input type="number" name="min-price" value="0">
+            <input type="number" name="max-price" calue="9000">
+          </fieldset>
+
+          <button type="submit">Применить</button>
+          <button type="reset">Сбросить</button>
+        </form>
+       </section>
+
+       <section class="catalog">
+        <h2>Найдено <span class="housing-type-catalog">гостиниц</span> <span class="housing-count">38</span></h2>
+        <select name="sorting">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="rating">По рейтингу</option>
+          <option value="popularity">По популярности</option>
+        </select>
+
+        <div class="view-buttons">
+          <button class="view-tile">Вид плиткой</button>
+          <button class="view-list">Вид списком</button>
+          <button class="view-table">Вид таблицей</button>
+        </div>
+
+        <ul class="housing-list">
+          <li class="housing-card">
+          <img src="#" alt="Гостиница Amara Resort & Spa"/>
+          <h3>Amara Resort & Spa</h3>
+          <p class="housing-type-card card-desc">Гостиница</p>
+          <p class="card-desc">от <span class="price">4000</span><span class="currency">₽</span></p>
+          <a href="#" class="details">Подробнее</a>
+          <button class="favorite">В избраное</button>
+          <div class="rating">
+            <!-- Рейтинг в звездах??? -->
+          </div>
+          </li>
+
+        </ul>
+
+       </section>
+
     </main>
+
     <footer class="main-footer">
-      <!-- Подвал -->
-    </footer>
+        <ol class="social">
+          <li>
+          <a class="link" href="#"
+            ><span class="visually-hidden">Ссылка на ВК</span></a
+          >
+          </li>
+          <li>
+          <a class="link" href="#"
+            ><span class="visually-hidden">Ссылка на Телеграм</span></a
+          >
+          </li>
+          <li>
+          <a class="link" href="#"
+            ><span class="visually-hidden">Ссылка на Ютуб</span></a
+          >
+          </li>
+        </ol>
+        <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <img src="#" class="some-logo" alt="лого" />
+      </footer>
+
   </body>
 </html>

@@ -10,7 +10,7 @@
       <!-- Шапка -->
       <a href="index.html"><img class="logo" src="#" alt="Логотип сайта" /></a>
       <nav class="navigation-panel">
-        <ul class="left-side">
+        <ul class="navigation">
           <li class="">
             <a href="index.html"
               ><p><b>Главная</b></p></a
@@ -28,16 +28,16 @@
           </li>
         </ul>
       </nav>
-      <ul class="search-favorite">
-        <li>
+      <ul class="navigation">
+        <li class="search">
           <a href="#"><span class="visually-hidden">поиск</span></a>
         </li>
-        <li>
+        <li class="favorite">
           <a href="#"><span class="visually-hidden">избраное</span></a>
         </li>
-        <li>
+        <li class="popup">
           <a href="#"
-            ><p><b>ХОЧУ СЮДА!</b></p></a
+            ><p><b>Хочу сюда!</b></p></a
           >
         </li>
       </ul>
@@ -45,20 +45,22 @@
 
     <main>
       <!-- Основа -->
-      <img class="background" src="#" alt="welcome to the gorgeous SEDONA" />
+      <h1 class="visually-hidden">Путешествие в Седону</h1>
 
-      <div class="textblock-wide">
-        <h2 class="header-phrase">
+      <section class="textblock-wide">
+        <img class="background" src="#" alt="welcome to the gorgeous SEDONA" />
+        <h2 class="phrase">
           Седона — небольшой городок в Аризоне,<br />
           заслуживающий большего!
         </h2>
-        <h3 class="under-header-text">
+        <h3 class="subtitle">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </h3>
-      </div>
+      </section>
 
       <section class="description-blocks">
-        <div class="textblock">
+        <ol>
+        <li class="textblock">
           <h3 class="textblock-header">
             Настоящий<br />
             городок
@@ -68,9 +70,9 @@
             туристов, там течёт своя<br />
             жизнь
           </p>
-        </div>
-        <div class="image-block" id="first-image-block"></div>
-        <div class="textblock">
+        </li>
+        <li class="image-block" id="first-image-block"></li>
+        <li class="textblock">
           <h3 class="textblock-header">
             Небольшая<br />
             площадь
@@ -79,8 +81,8 @@
             Все достопримечательности<br />
             находятся очень близко
           </p>
-        </div>
-        <div class="textblock">
+        </li>
+        <li class="textblock">
           <h3 class="textblock-header">
             Красивая<br />
             дорога
@@ -89,8 +91,8 @@
             Ехать в Седону из Лас-Вегаса<br />
             совсем не скучно!
           </p>
-        </div>
-        <div class="textblock">
+        </li>
+        <li class="textblock">
           <h3 class="textblock-header">
             Мало<br />
             туристов
@@ -99,9 +101,9 @@
             Большинство едет в Гранд<br />
             Каньон и толпится там
           </p>
-        </div>
-        <div class="image-block"></div>
-        <div class="textblock">
+        </li>
+        <li class="image-block"></li>
+        <li class="textblock">
           <h3 class="textblock-header">
             Там есть<br />
             мост дьявола
@@ -111,18 +113,21 @@
             Если вы осмелитесь,<br />
             разумеется
           </p>
-        </div>
+        </li>
+        </ol>
       </section>
 
-      <div class="textblock-wide">
-        <h2 class="header-phrase">
-          Приезжайте в Седону отдохнуть<br />
-          в комфорте и уюте!
-        </h2>
-        <p class="under-header-text">
-          Опытный персонал и качественное обслуживание!
-        </p>
-      </div>
+      <section class="">
+        <div class="textblock">
+          <h2 class="slogan">
+           Приезжайте в Седону отдохнуть<br />
+           в комфорте и уюте!
+          </h2>
+          <p class="subtitle">
+            Опытный персонал и качественное обслуживание!
+          </p>
+        </div>
+      </section>
 
       <section class="description-blocks">
         <div class="textblock">
@@ -165,7 +170,7 @@
         </button>
       </section>
 
-      <section class="subscribe-section">
+      <section class="subscribe">
         <form action="#" method="POST">
           <input type="email" name="email" placeholder="Ваш Email" required />
           <button class="subscribe-button" type="submit">Подписаться</button>
@@ -173,17 +178,23 @@
       </section>
 
       <footer class="main-footer">
-        <div>
-          <a class="links" href="#"
+        <ol class="social">
+          <li>
+          <a class="link" href="#"
             ><span class="visually-hidden">Ссылка на ВК</span></a
           >
-          <a class="links" href="#"
+          </li>
+          <li>
+          <a class="link" href="#"
             ><span class="visually-hidden">Ссылка на Телеграм</span></a
           >
-          <a class="links" href="#"
+          </li>
+          <li>
+          <a class="link" href="#"
             ><span class="visually-hidden">Ссылка на Ютуб</span></a
           >
-        </div>
+          </li>
+        </ol>
         <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <img src="#" class="some-logo" alt="лого" />
       </footer>
