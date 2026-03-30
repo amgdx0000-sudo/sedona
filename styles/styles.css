@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.visually-hidden{
+  display: none;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header{
+  padding: 0 20px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  padding: 0 30px;
+}
+.logo-navigation{
+  display: flex;
+  align-items: center;
+}
+.navigation, .navigation-user {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-family: "PT Sans";
+  font-weight:700px;
+  color:black;
+  gap: 20px;
+  padding: 0 30px;
+}
+.popup{
+  font-family: "PT Sans";
+  font-weight:700px;
+  color:black;
+}
+.textblock-wide{
+  background-image: url(../images/gorgeous-sedona.jpg);
+  background-color: antiquewhite;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 482px;
+  background-size: cover;
+}
+.popup {
+  background-color: #756157;
+  color: white;
+  height: 36px;
+  width: 160px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
