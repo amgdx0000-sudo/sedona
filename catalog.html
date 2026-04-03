@@ -11,10 +11,11 @@
 
         <header class="main-header">
       <!-- Шапка -->
+       <section class="logo-navigation">
       <a href="index.html"><img class="logo" src="images/sedona-logo.svg" alt="Логотип сайта" /></a>
       <nav class="navigation-panel">
         <ul class="navigation">
-          <li class="">
+          <li>
             <a href="index.html"
               ><p><b>Главная</b></p></a
             >
@@ -31,18 +32,15 @@
           </li>
         </ul>
       </nav>
-      <ul class="navigation">
+      </section>
+      <ul class="navigation-user">
         <li class="search">
-          <a href="#"><img class="search-icon" src="images/search.svg" alt="Иконка поиска" </a>
+          <a href="#"><img class="search-icon" src="images/search.svg" alt="Иконка поиска"> </a>
         </li>
         <li class="favorite">
-          <a href="#"><img class="favorite-icon" src="images/heart.svg" alt="Иконка избраного" </a>
+          <a href="#"><img class="favorite-icon" src="images/heart.svg" alt="Иконка избраного"> </a>
         </li>
-        <li class="popup">
-          <a href="#"
-            ><p><b>Хочу сюда!</b></p></a
-          >
-        </li>
+        <button class="popup"><p>Хочу сюда!</p></button>
       </ul>
     </header>
 
@@ -159,8 +157,10 @@
        </section>
 
        <section class="subscribe">
-        <form action="#" method="POST">
-          <input type="email" name="email" placeholder="Ваш Email" required />
+        <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
+        <p class="subscribe-phrase">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <form action="#" method="POST" class="subscribe-form">
+          <input class="subscribe-input" type="email" name="email" placeholder="Ваш e-mail" required />
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -185,7 +185,7 @@
           </li>
         </ol>
         <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <img src="#" class="some-logo" alt="лого" />
+        <img src="images/helldivers-super-earth-flag-seeklogo.svg" class="some-logo" alt="лого" />
       </footer>
 
   </body>
