@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Гостиницы Седоны</title>
-    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/styles-catalog.css"/>
     <link href="https://fonts.googleapis.com" rel="stylesheet">
   </head>
   <body>
@@ -47,114 +47,177 @@
     <main>
       <!-- Основа -->
        <section class="filter">
-        <h1 class="visually-hidden">Список гостиниц с фильтрами</h1>
-        <form action="#" method="get">
+        <h1 class="filter-header">Гостиницы Седоны</h1>
+        <div class="filter-subtitle">
+        <img class="house-icon" src="images/home.svg" alt="Иконка дома"/>
+        <img class="bradcrumbs-icon" src="images/breadcrumbs.svg" alt="Иконка скобки"/>
+        <p class="filter-text">Гостиницы</p>
+        </div>
 
+        <form action="#" method="get" class="form">
+          <div class="options-selection">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
-              <li><input type="checkbox" name="pool" checked>Бассейн</li>
-              <li><input type="checkbox" name="parking">Парковка</li>
-              <li><input type="checkbox" name="wi-fi">Wi-Fi</li>
+              <li class="options"><input type="checkbox" name="pool" checked>Бассейн</li>
+              <li class="options"><input type="checkbox" name="parking">Парковка</li>
+              <li class="options"><input type="checkbox" name="wi-fi">Wi-Fi</li>
             </ul>
           </fieldset>
 
           <fieldset>
+            <legend>Тип жилья:</legend>
             <ul>
-              <li><input type="radio" name="housing-type" checked>Гостиница</li>
-              <li><input type="radio" name="housing-type">Мотель</li>
-              <li><input type="radio" name="housing-type">Апартаменты</li>
+              <li class="options"><input type="radio" name="housing-type" checked>Гостиница</li>
+              <li class="options"><input type="radio" name="housing-type">Мотель</li>
+              <li class="options"><input type="radio" name="housing-type">Апартаменты</li>
             </ul>
           </fieldset>
+          </div>
 
-          <fieldset>
+          <fieldset class="value-selection">
+            <legend>Стоимость:</legend>
             <input type="number" name="min-price" value="0">
-            <input type="number" name="max-price" calue="9000">
+            <input type="number" name="max-price" value="9000">
+            <div class="buttons">
+            <button type="submit">Применить</button>
+            <button type="reset">Сбросить</button>
+            </div>
           </fieldset>
-
-          <button type="submit">Применить</button>
-          <button type="reset">Сбросить</button>
         </form>
        </section>
 
        <section class="catalog">
-        <h2>Найдено <span class="housing-type-catalog">гостиниц</span> <span class="housing-count">38</span></h2>
-        <select name="sorting">
+        <div class="view">
+        <h2 class="catalog-header">Найдено <span class="housing-type-catalog">гостиниц:</span> <span class="housing-count">38</span></h2>
+        <div class="view-buttons">
+
+          <select name="sorting" class="dropdown">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="rating">По рейтингу</option>
           <option value="popularity">По популярности</option>
         </select>
 
-        <div class="view-buttons">
-          <button class="view-tile">Вид плиткой</button>
-          <button class="view-list">Вид списком</button>
-          <button class="view-table">Вид таблицей</button>
+          <button class="view-tile view-button"><img src="images/mode.png"/> </button>
+          <button class="view-list view-button"><img src="images/mode2.png"/></button>
+          <button class="view-table view-button"><img src="images/mode3.png"/></button>
+        </div>
         </div>
 
         <ul class="housing-list">
           <li class="housing-card">
-            <img src="images/amara-resort.jpg" alt="Гостиница Amara Resort & Spa"/>
-            <h3>Amara Resort & Spa</h3>
+            <img class="card-img" src="images/amara-resort.jpg" alt="Гостиница Villas at Poco Diablo"/>
+            <div>
+            <h3 class="housing-name">Amara Resort & Spa</h3>
+            </div>
+            <div class="card-price">
             <p class="housing-type-card card-desc">Гостиница</p>
-             <p class="card-desc">от <span class="price">4000</span><span class="currency">₽</span></p>
+            <p class="card-desc">от <span class="price">4000</span><span class="currency">₽</span></p>
+            </div>
+            <div class="card-buttons">
             <a href="#" class="details">Подробнее</a>
-            <button class="favorite">В избраное</button>
+            <button class="favorite-add">В избраное</button>
+            </div>
            <div class="rating">
-            <span class="stars">4 звезды</span>
-            <p>Рейтинг: <span class="rating-count">8,5</span></p>
+            <div class="stars">
+            <img class="star-1 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-2 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-3 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-4 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-5 star" src="images/star.svg" alt="Звезда"/>
+            </div>
+            <p class="rating-part">Рейтинг: <span class="rating-count">8,5</span></p>
            </div>
           </li>
 
           <li class="housing-card">
-            <img src="#" alt="Гостиница Villas at Poco Diablo"/>
-            <h3>Villas at Poco Diablo</h3>
+            <img class="card-img" src="images/villas-Poco-Diablo.jpg" alt="Гостиница Villas at Poco Diablo"/>
+            <div>
+            <h3 class="housing-name">Villas at Poco Diablo</h3>
+            </div>
+            <div class="card-price">
             <p class="housing-type-card card-desc">Гостиница</p>
             <p class="card-desc">от <span class="price">5000</span><span class="currency">₽</span></p>
-            <a href="images/villas-Poco-Diablo.jpg" class="details">Подробнее</a>
-            <button class="favorite">В избраное</button>
+            </div>
+            <div class="card-buttons">
+            <a href="#" class="details">Подробнее</a>
+            <button class="favorite-add">В избраное</button>
+            </div>
            <div class="rating">
-            <span class="stars">4 звезды</span>
-            <p>Рейтинг: <span class="rating-count">9,2</span></p>
+            <div class="stars">
+            <img class="star-1 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-2 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-3 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-4 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-5 star" src="images/star.svg" alt="Звезда"/>
+            </div>
+            <p class="rating-part">Рейтинг: <span class="rating-count">9,2</span></p>
            </div>
           </li>
 
           <li class="housing-card">
-            <img src="images/desert-quail.jpg" alt="Гостиница Desert Quail Inn"/>
-            <h3>Desert Quail Inn</h3>
+            <img class="card-img" src="images/desert-quail.jpg" alt="Гостиница Villas at Poco Diablo"/>
+            <div>
+            <h3 class="housing-name">Desert Quail Inn</h3>
+            </div>
+            <div class="card-price">
             <p class="housing-type-card card-desc">Гостиница</p>
-            <p class="card-desc">от <span class="price">2500</span><span class="currency">₽</span></p>
+            <p class="card-desc">от <span class="price">5000</span><span class="currency">₽</span></p>
+            </div>
+            <div class="card-buttons">
             <a href="#" class="details">Подробнее</a>
-            <button class="favorite">В избраное</button>
+            <button class="favorite-add">В избраное</button>
+            </div>
            <div class="rating">
-            <span class="stars">3 звезды</span>
-            <p>Рейтинг: <span class="rating-count">6,9</span></p>
+            <div class="stars">
+            <img class="star-1 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-2 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-3 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-4 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-5 star" src="images/star.svg" alt="Звезда"/>
+            </div>
+            <p class="rating-part">Рейтинг: <span class="rating-count">9,2</span></p>
            </div>
           </li>
 
           <li class="housing-card">
-            <img src="images/GreenTree.jpg" alt="Гостиница GreenTree Inn"/>
-            <h3>GreenTree Inn</h3>
+            <img class="card-img" src="images/GreenTree.jpg" alt="Гостиница Villas at Poco Diablo"/>
+            <div>
+            <h3 class="housing-name">GreenTree Inn</h3>
+            </div>
+            <div class="card-price">
             <p class="housing-type-card card-desc">Гостиница</p>
-            <p class="card-desc">от <span class="price">1500</span><span class="currency">₽</span></p>
+            <p class="card-desc">от <span class="price">5000</span><span class="currency">₽</span></p>
+            </div>
+            <div class="card-buttons">
             <a href="#" class="details">Подробнее</a>
-            <button class="favorite">В избраное</button>
+            <button class="favorite-add">В избраное</button>
+            </div>
            <div class="rating">
-            <span class="stars">2 звезды</span>
-            <p>Рейтинг: <span class="rating-count">5,0</span></p>
+            <div class="stars">
+            <img class="star-1 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-2 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-3 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-4 star" src="images/star.svg" alt="Звезда"/>
+            <img class="star-5 star" src="images/star.svg" alt="Звезда"/>
+            </div>
+            <p class="rating-part">Рейтинг: <span class="rating-count">9,2</span></p>
            </div>
           </li>
-        </ul>
+          <div class="line"></div>
+        </section>
 
-        <ul class="pages">
-          <li><a href="#" class="current">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li>...</li>
-          <li><a href="#">10</a></li>
-        </ul>
-       </section>
+        <section>
+          <ul class="pages">
+            <li class="page"><a href="#" class="current">1</a></li>
+            <li class="page"><a href="#">2</a></li>
+            <li class="page"><a href="#">3</a></li>
+            <li class="page"><a href="#">4</a></li>
+           <li class="page">...</li>
+            <li class="page"><a href="#">10</a></li>
+         </ul>
+        </section>
 
        <section class="subscribe">
         <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
