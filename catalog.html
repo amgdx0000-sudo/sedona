@@ -54,37 +54,54 @@
         <p class="filter-text">Гостиницы</p>
         </div>
 
-        <form action="#" method="get" class="form">
+
+        <form action="#" method="get" class="form-housing">
           <div class="options-selection">
           <fieldset>
             <legend>Инфраструктура:</legend>
-            <ul>
-              <li class="options"><input type="checkbox" name="pool" checked>Бассейн</li>
-              <li class="options"><input type="checkbox" name="parking">Парковка</li>
-              <li class="options"><input type="checkbox" name="wi-fi">Wi-Fi</li>
+            <ul class="checkboxes">
+              <li class="checkbox-option"><input type="checkbox" name="pool" checked>Бассейн</li>
+              <li class="checkbox-option"><input type="checkbox" name="parking">Парковка</li>
+              <li class="checkbox-option"><input type="checkbox" name="wi-fi">Wi-Fi</li>
             </ul>
           </fieldset>
 
           <fieldset>
             <legend>Тип жилья:</legend>
-            <ul>
-              <li class="options"><input type="radio" name="housing-type" checked>Гостиница</li>
-              <li class="options"><input type="radio" name="housing-type">Мотель</li>
-              <li class="options"><input type="radio" name="housing-type">Апартаменты</li>
+            <ul class="radio-buttons">
+              <li class="radio-option"><input type="radio" name="housing-type" checked>Гостиница</li>
+              <li class="radio-option"><input type="radio" name="housing-type">Мотель</li>
+              <li class="radio-option"><input type="radio" name="housing-type">Апартаменты</li>
             </ul>
           </fieldset>
           </div>
 
           <fieldset class="value-selection">
             <legend>Стоимость:</legend>
-            <input type="number" name="min-price" value="0">
-            <input type="number" name="max-price" value="9000">
+            <div class="value-group">
+              <div class="value-container">
+                <div class="value-background left-side">
+            <label class="value-box">
+              <input class="value-selector" type="number" name="min-price" value="0">
+              <span class="label-text">от</span>
+            </label>
+            </div>
+            <div class="value-background right-side">
+            <label class="value-box">
+              <input class="value-selector" type="number" name="max-price" value="9000">
+              <span class="label-text">до</span>
+            </label>
+              </div>
+              </div>
+            <div class="slider"></div>
+            </div>
             <div class="buttons">
-            <button type="submit">Применить</button>
-            <button type="reset">Сбросить</button>
+            <button class="submit-btn" type="submit">Применить</button>
+            <button class="reset-btn" type="reset">Сбросить</button>
             </div>
           </fieldset>
         </form>
+
        </section>
 
        <section class="catalog">
@@ -105,7 +122,11 @@
         </div>
         </div>
 
+        <section class="container-2">
+        <div class="container-1">
+
         <ul class="housing-list">
+
           <li class="housing-card">
             <img class="card-img" src="images/amara-resort.jpg" alt="Гостиница Villas at Poco Diablo"/>
             <div>
@@ -205,19 +226,25 @@
             <p class="rating-part">Рейтинг: <span class="rating-count">9,2</span></p>
            </div>
           </li>
-          <div class="line"></div>
+
+        </ul>
+          <section class="pagination">
+          <ul class="pages">
+            <li class="current-page">1</li>
+            <li><a class="page" href="#">2</a></li>
+            <li><a class="page" href="#">3</a></li>
+            <li><a class="page" href="#">4</a></li>
+           <li class="page-dots">...</li>
+            <li><a class="page" href="#">10</a></li>
+         </ul>
+         </section>
+        </div>
+
+
         </section>
 
-        <section>
-          <ul class="pages">
-            <li class="page"><a href="#" class="current">1</a></li>
-            <li class="page"><a href="#">2</a></li>
-            <li class="page"><a href="#">3</a></li>
-            <li class="page"><a href="#">4</a></li>
-           <li class="page">...</li>
-            <li class="page"><a href="#">10</a></li>
-         </ul>
-        </section>
+    </section>
+
 
        <section class="subscribe">
         <h2 class="subscribe-header">Подпишитесь на рассылку</h2>

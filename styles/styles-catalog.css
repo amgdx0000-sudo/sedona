@@ -19,6 +19,11 @@
   src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -84,6 +89,7 @@ header{
   background-image: url(../images/filter-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0 70px 70px 70px;
 }
 .filter-header{
   font-family: "PT Sans", sans-serif;
@@ -105,14 +111,88 @@ padding-bottom: 40px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+}
 
+
+
+
+.form-housing{
+  display: flex;
 }
 ul{
   list-style: none;
 }
-.form{
-  padding-left: 70px;
+fieldset{
+  border: none;
+}
+.value-selection{
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkboxes{
+  font-family: "PT Sans", sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+}
+.radio-buttons{
+  font-family: "PT Sans", sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+}
+.form-housing{
+  display: flex;
+  justify-content: space-between;
+}
+.value-group{
+display: flex;
+flex-direction: column;
+margin-right: 70px;
+}
+.value-background{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 143px;
+  height: 48px;
+  margin-right: 2px;
+  background-color: white;
+}
+.left-side{
+  border-radius: 4px 0 0 4px;
+}
+.right-side{
+  border-radius: 0 4px 4px 0;
+}
+.value-box{
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.value-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.value-selector{
+  border: none;
+  height: 45px;
+  width: 100px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+.slider{
+  width: 287px;
+  height: 3px;
+  background-color: white;
+  margin-top: 48px;
 }
 legend{
   font-family: "PT Sans", sans-serif;
@@ -122,20 +202,52 @@ legend{
   color: white;
   padding-bottom: 32px;
 }
-.options{
+.checkbox-option{
   padding-bottom: 16px;
 }
-fieldset{
-  border: none;
-  background-color: #82B3D3;
+.radio-option{
+  padding-bottom: 16px;
 }
-.value-selection{
-  background-color: blue;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.label-text{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
 }
+.submit-btn{
+width: 191px;
+height: 36px;
+background-color: rgba(130, 179, 211, 1);
+border: none;
+font-family: "PT Sans", sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+color: white;
+border-radius: 4px;
+margin-bottom: 32px;
+cursor: pointer;
+}
+.reset-btn{
+width: 191px;
+height: 36px;
+border: none;
+font-family: "PT Sans", sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+color: white;
+curs;
+}
+
+
+
+
+
+
 .view{
   display: flex;
   justify-content: space-between;
@@ -158,6 +270,7 @@ fieldset{
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
+
 .view-buttons{
   display: flex;
   gap: 8px;
@@ -171,6 +284,9 @@ fieldset{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.catalog{
+  margin-bottom: 60px;
 }
 .catalog-header{
   font-family: "PT Sans", sans-serif;
@@ -199,6 +315,9 @@ fieldset{
   padding: 20px 0 0 20px;
 }
 .housing-list{
+  border-bottom: solid 2px rgba(229, 229, 229, 1);
+  padding-bottom: 40px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
@@ -298,14 +417,75 @@ fieldset{
   height: 2px;
   width: 300px;
 }
+.pagination{
+  display: block;
+}
 .pages{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  gap: 8px;
+}
+.page{
+  background-color: rgba(130, 179, 211, 1);
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: white;
+}
+.page-dots{
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: black;
+}
+.current-page{
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: rgba(242, 242, 242, 1);
+  color: black;
 }
 
 
+
+.container-1{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-direction: column;
+}
+.container-2{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
 
 
