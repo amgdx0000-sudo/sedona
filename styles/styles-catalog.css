@@ -130,6 +130,17 @@ fieldset{
   justify-content: center;
   align-items: center;
 }
+.checkbox-option{
+  padding-bottom: 16px;
+  display: flex;
+  gap: 16px;
+}
+.radio-option{
+  padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 .checkboxes{
   font-family: "PT Sans", sans-serif;
   font-weight:400;
@@ -144,6 +155,50 @@ fieldset{
   line-height: 23px;
   color: white;
 }
+.radio{
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  color: currentColor;
+  width: 20px;
+  height: 20px;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.radio:checked{
+  appearance: none;
+  background-color: rgba(63, 94, 114, 1);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 20px;
+  height: 20px;
+  border: 5px solid currentColor;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.checkbox{
+  appearance: none;
+  background-color: white;
+  margin: 0;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.checkbox:checked{
+  background-image: url(../images/check-mark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+
+
 .form-housing{
   display: flex;
   justify-content: space-between;
@@ -202,12 +257,7 @@ legend{
   color: white;
   padding-bottom: 32px;
 }
-.checkbox-option{
-  padding-bottom: 16px;
-}
-.radio-option{
-  padding-bottom: 16px;
-}
+
 .label-text{
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -240,7 +290,8 @@ font-size: 16px;
 line-height: 20px;
 text-transform: uppercase;
 color: white;
-curs;
+cursor: pointer;
+background-color: transparent;
 }
 
 
