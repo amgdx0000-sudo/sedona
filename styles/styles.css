@@ -351,3 +351,16 @@ text-transform: uppercase;
 .some-logo{
   width: 75px;
 }
+.navigation{
+  padding: 0;
+  height: 100%;
+  background-color: aqua;
+}
+.navigation li div{
+  height: 100%;
+  flex: 1;
+}
+.navigation li div:hover{
+  background-color: aquamarine;
+  border-bottom: solid 2px brown;
+}
