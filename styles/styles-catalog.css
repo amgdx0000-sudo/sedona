@@ -2,8 +2,17 @@
   margin: 0;
   padding: 0;
 }
-.visually-hidden{
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 @font-face {
   font-family: "PT Sans";
@@ -35,6 +44,20 @@ header{
   align-items: center;
   justify-content: space-between;
 }
+ul{
+  list-style: none;
+}
+fieldset{
+  border: none;
+}
+legend{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-bottom: 32px;
+}
 .logo{
   padding: 0 30px 0 70px;
   position: relative;
@@ -54,7 +77,7 @@ header{
   font-weight:700px;
   font-size: 20px;
   line-height: 24px;
-  color:black;
+  color:#000000;
   gap:32px;
   padding: 20px 16px;
 }
@@ -67,7 +90,7 @@ header{
   font-weight:700px;
   font-size: 20px;
   line-height: 24px;
-  color:black;
+  color:#000000;
   gap: 16px;
 }
 .popup{
@@ -76,7 +99,7 @@ header{
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   border-radius: 4px;
   padding: 0;
   width: 160px;
@@ -97,31 +120,21 @@ header{
   font-size: 60px;
   line-height: 78px;
   padding-top: 35px;
-  color: white;
+  color: #ffffff;
 }
 .filter-subtitle{
   display: flex;
   padding-top: 8px;
 padding-bottom: 40px;
   gap: 10px;
-  color: white;
+  color: #ffffff;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
 }
-
-
-
-
 .form-housing{
   display: flex;
-}
-ul{
-  list-style: none;
-}
-fieldset{
-  border: none;
 }
 .value-selection{
   display: flex;
@@ -144,18 +157,18 @@ fieldset{
   font-weight:400;
   font-size: 18px;
   line-height: 23px;
-  color: white;
+  color: #ffffff;
 }
 .radio-buttons{
   font-family: "PT Sans", sans-serif;
   font-weight:400;
   font-size: 18px;
   line-height: 23px;
-  color: white;
+  color: #ffffff;
 }
 .radio{
   appearance: none;
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 0;
   color: currentColor;
   width: 20px;
@@ -178,9 +191,9 @@ fieldset{
 }
 .checkbox{
   appearance: none;
-  background-color: white;
+  background-color: #ffffff;
   margin: 0;
-  color: white;
+  color: #ffffff;
   width: 20px;
   height: 20px;
   border-radius: 4px;
@@ -191,12 +204,6 @@ fieldset{
   background-repeat: no-repeat;
   background-position: center;
 }
-
-
-
-
-
-
 .form-housing{
   display: flex;
   justify-content: space-between;
@@ -213,7 +220,7 @@ margin-right: 70px;
   width: 143px;
   height: 48px;
   margin-right: 2px;
-  background-color: white;
+  background-color: #ffffff;
 }
 .left-side{
   border-radius: 4px 0 0 4px;
@@ -223,7 +230,6 @@ margin-right: 70px;
 }
 .value-box{
   display: flex;
-
   justify-content: center;
   align-items: center;
 }
@@ -244,18 +250,9 @@ margin-right: 70px;
 .slider{
   width: 287px;
   height: 3px;
-  background-color: white;
+  background-color: #ffffff;
   margin-top: 48px;
 }
-legend{
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: white;
-  padding-bottom: 32px;
-}
-
 .label-text{
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -273,7 +270,7 @@ font-weight: 700;
 font-size: 16px;
 line-height: 20px;
 text-transform: uppercase;
-color: white;
+color: #ffffff;
 border-radius: 4px;
 margin-bottom: 32px;
 cursor: pointer;
@@ -287,16 +284,10 @@ font-weight: 700;
 font-size: 16px;
 line-height: 20px;
 text-transform: uppercase;
-color: white;
+color: #ffffff;
 cursor: pointer;
 background-color: transparent;
 }
-
-
-
-
-
-
 .view{
   display: flex;
   justify-content: space-between;
@@ -319,7 +310,6 @@ background-color: transparent;
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
-
 .view-buttons{
   display: flex;
   gap: 8px;
@@ -329,7 +319,7 @@ background-color: transparent;
   height: 48px;
   border-radius: 4px;
   border-color: rgba(229, 229, 229, 1);
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -343,7 +333,7 @@ background-color: transparent;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: black;
+  color: #000000;
 }
 .options-selection{
   display: flex;
@@ -357,7 +347,6 @@ background-color: transparent;
   justify-content: center;
   flex-direction: column;
 }
-
 .card-img{
   width: 300px;
   height: 212px;
@@ -417,7 +406,7 @@ background-color: transparent;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
 }
 .favorite-add{
   background-color: rgba(130, 179, 211, 1);
@@ -431,7 +420,7 @@ background-color: transparent;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   border: none;
   cursor: pointer;
 }
@@ -453,16 +442,17 @@ background-color: transparent;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: black;
+  color: #000000;
   border: none;
 }
 .stars{
   display: flex;
   align-items: center;
   gap: 6px;
+  fill: #83B3D3;
 }
 .line{
-  background-color: red;
+  background-color: #ff0000;
   height: 2px;
   width: 300px;
 }
@@ -489,10 +479,10 @@ background-color: transparent;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
 }
 .page-dots{
-  background-color: white;
+  background-color: #ffffff;
   width: 60px;
   height: 60px;
   border-radius: 4px;
@@ -504,7 +494,7 @@ background-color: transparent;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  color: black;
+  color: #000000;
 }
 .current-page{
   width: 60px;
@@ -519,11 +509,8 @@ background-color: transparent;
   line-height: 36px;
   text-transform: uppercase;
   background-color: rgba(242, 242, 242, 1);
-  color: black;
+  color: #000000;
 }
-
-
-
 .container-1{
 display: flex;
 justify-content: flex-start;
@@ -535,9 +522,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-
-
-
 .subscribe{
   background-repeat: no-repeat;
   background-size: cover;
@@ -555,7 +539,7 @@ align-items: center;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: black;
+  color: #000000;
   padding-bottom: 20px;
 }
 .subscribe-form{
@@ -581,7 +565,7 @@ align-items: center;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   border-radius: 0 4px 4px 0;
   padding: 0;
   width: 232px;
@@ -595,7 +579,7 @@ align-items: center;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  color: black;
+  color: #000000;
   padding-bottom: 54px;
 }
 .main-footer{
@@ -611,6 +595,7 @@ align-items: center;
 }
 .link{
   padding: 10px 10px;
+  fill:#82B3D3;
 }
 .phone-number{
 font-weight: 400;
