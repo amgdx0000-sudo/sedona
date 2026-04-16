@@ -85,5 +85,5 @@ body{
   border-bottom: solid 2px #756257;
   display: flex;
   align-items: center;
-  height: 64px;
+  min-height: 64px;
 }
